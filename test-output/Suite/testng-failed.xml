@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="light@10"/>
+  <parameter name="account" value="yinid5555@gmail.com"/>
+  <test thread-count="5" name="Staging Sanity(failed)">
+    <classes>
+      <class name="GetMega.MegaAppium.AppLogin">
+        <methods>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- GetMega.MegaAppium.AppLogin -->
+    </classes>
+  </test> <!-- Staging Sanity(failed) -->
+</suite> <!-- Failed suite [Suite] -->

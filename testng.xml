@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name ="account" value ="yinid5555@gmail.com"/>
+<parameter name ="password" value ="light@10"/>
+
+<!--   <test name="Staging Sanity"> -->
+<!--     <classes> -->
+<!-- 	<class name="GetMega.MegaAppium.AppLogin"/> -->
+<!-- 	<class name="GetMega.MegaAppium.DepositCash"/> -->
+<!--    <class name="GetMega.MegaAppium.AppWithdrawal"/>  -->
+<!--    <class name="GetMega.MegaAppium.Logout"/>  -->
+<!--    </classes> -->
+<!--   </test>  -->
+
+
+  
+  <test name="Prod Sanity">
+  <classes>
+	<class name="GetMega.MegaAppium.ProdAppLogin"/>
+	<class name="GetMega.MegaAppium.ProdWalletSanity"/>
+	<class name="GetMega.MegaAppium.ProdSideMenuNavigation"/>	
+	<class name="GetMega.MegaAppium.ProdTableSanity"/>
+	<class name="GetMega.MegaAppium.ProdRummyTableSanity"/>
+	<class name="GetMega.MegaAppium.ProdPokerTableSanity"/>
+	<class name="GetMega.MegaAppium.ProdLogout"/>
+	</classes>
+    </test>
+</suite> 
